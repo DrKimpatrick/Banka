@@ -1,0 +1,131 @@
+html body {
+  margin: 0;
+  padding: 0;
+  background: #dae1e7;
+}
+
+a {
+  text-decoration: none;
+}
+.topWrapper {
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 200px solid transparent;
+  border-right: 250px solid #292826;
+  border-bottom: 80px solid transparent;
+  position: absolute;
+  right: 0;
+  top: -90px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.circle {
+  height: 300px;
+  width: 300px;
+  background-color: #f9d342;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50px;
+  left: -110px;
+  z-index: -1;
+}
+
+.container {
+  background: white;
+  height: 80%;
+  width: 80%;
+  margin: 5% auto;
+  border-radius: 15px;
+  z-index: 10;
+  opacity: 0.8;
+  display: grid;
+  grid-template-columns: 40% auto;
+  z-index: 100;
+}
+
+.blackTheme {
+  background: #292826;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 40% auto 50%;
+  grid-gap: 30px;
+}
+.bankIcon {
+  align-self: end;
+  margin: 0 auto;
+  color: #f9d342;
+}
+.blackTheme h2 {
+  color: #dae1e7;
+  margin: 0 auto;
+  font-weight: bolder;
+  font-size: 35px;
+}
+.blackTheme p {
+  color: #f9d342;
+  margin: 0 auto;
+  font-weight: bolder;
+}
+
+.lightTheme {
+  display: grid;
+  grid-template-rows: 25% 40% auto;
+  max-width: 100%;
+  padding: 0 50px;
+}
+.lightTheme h3 {
+  font-size: 30px;
+  color: #292826;
+  align-self: end;
+  font-weight: 600;
+}
+.lightTheme form {
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-row-gap: 15px;
+  width: 100%;
+  margin: 0;
+}
+.lightTheme p {
+  color: #292826;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.lightTheme p a {
+  color: #292826;
+}
+
+.lightTheme p a:hover {
+  text-decoration: underline;
+  transition: 0.8s;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border: none;
+  border: 2px solid #3a3835;
+  color: #292826;
+  font-style: normal;
+  font-size: 20px;
+  height: 35px;
+  padding-left: 5px;
+  /* opacity: 0.5; */
+}
+
+input[type="submit"] {
+  background-color: #292826;
+  color: white;
+  border: 1px solid #292826;
+  cursor: pointer;
+  height: 35px;
+}
