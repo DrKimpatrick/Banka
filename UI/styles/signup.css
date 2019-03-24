@@ -1,0 +1,35 @@
+.lightThemeSignup {
+  display: grid;
+  grid-template-rows: 25% 50% auto;
+  max-width: 100%;
+  padding: 0 50px;
+}
+.lightThemeSignup h3 {
+  font-size: 30px;
+  color: #292826;
+  align-self: end;
+  font-weight: 600;
+}
+.lightThemeSignup form {
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-row-gap: 15px;
+  width: 100%;
+  margin: 0;
+}
+
+.lightThemeSignup p {
+  color: #292826;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.lightThemeSignup p a {
+  color: #292826;
+}
+
+.lightThemeSignup p a:hover {
+  text-decoration: underline;
+  transition: 0.8s;
+}
