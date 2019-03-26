@@ -4,8 +4,9 @@ import SignUp from './components/auth/signup.js';
 import Utils from './utils.js';
 import Error404 from './components/404.js';
 import ClientDashboard from './layouts/clientDashboard.js';
-import ClientProfile from './layouts/clientProfile.js';
+import AccountHistory from './components/clientDashboard/accountHistory.js';
 import NewAccount from './components/clientDashboard/newAccount.js';
+import AdminDashboard from './layouts/adminDashboard.js';
 
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
@@ -13,6 +14,7 @@ const routes = {
     ,'/signup'       : 'signup'
     ,'/dashboard'    : 'profile'
     ,'/account'       : 'account'
+    ,'/admin'          : AdminDashboard
 };
 
 const router = async () => {
@@ -44,7 +46,7 @@ const router = async () => {
 
     }else if (page === 'profile' || page === 'account') {
         if (page === 'profile'){
-            container.innerHTML = await ClientDashboard.render(ClientProfile.render())
+            container.innerHTML = await ClientDashboard.render(AccountHistory.render())
             await ClientDashboard.after_render()
         }else {
             container.innerHTML = await ClientDashboard.render(NewAccount.render())

@@ -1,15 +1,16 @@
-import BlackTheme from '../components/clientDashboard/blackTheme.js';
+import AdminBlackTheme from '../components/adminDashboard/AdminBlackTheme.js';
 import NavBar from '../components/clientDashboard/navbar.js';
+import AccountsList from '../components/adminDashboard/accountsList.js';
 
-let ClientDashboard = {
-    render : async (content) => {
+let AdminDashboard = {
+    render : async () => {
         let view =  /*html*/`
             <div class='dashWrapper'>
-                <div class='dashBackTheme'>${BlackTheme.render()}</div>
+                <div class='dashBackTheme'>${AdminBlackTheme.render()}</div>
                 <div class='dashLightTheme'>
                     ${NavBar.render()}
                     <div class='contentArea'>
-                        ${content}
+                        ${AccountsList.render()}
                     </div>
                 </div>
             </div>
@@ -20,4 +21,4 @@ let ClientDashboard = {
         
 }
 
-export default ClientDashboard;
+export default AdminDashboard;
