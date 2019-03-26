@@ -6,7 +6,6 @@ export let AccountHistory = {
             <div class='accountProfile'>
                 <img src='../../images/patrick.jpg'/>
                 <div class='profileNames'>
-                    <span><b>Name:</b>dr.kimpatrick</span>
                     <span><b>Email:</b>dr.kimpatrick@gmail.com</span>
                     <span><b>Account NO:</b> #37746646646</span>
                 </div>
@@ -50,6 +49,62 @@ export let AccountHistory = {
                     </tr>
                     <tr>
                         <td>4</td>
+                        <td>30th-march-2019</td>
+                        <td>Kamwookya</td>
+                        <td></td>
+                        <td>10,000</td>
+                        <td>10,000</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>30th-march-2019</td>
+                        <td>Kamwookya</td>
+                        <td></td>
+                        <td>10,000</td>
+                        <td>10,000</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>30th-march-2019</td>
+                        <td>Kamwookya</td>
+                        <td></td>
+                        <td>10,000</td>
+                        <td>10,000</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>30th-march-2019</td>
+                        <td>Kamwookya</td>
+                        <td></td>
+                        <td>10,000</td>
+                        <td>10,000</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>30th-march-2019</td>
+                        <td>Kamwookya</td>
+                        <td></td>
+                        <td>10,000</td>
+                        <td>10,000</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>30th-march-2019</td>
+                        <td>Kamwookya</td>
+                        <td></td>
+                        <td>10,000</td>
+                        <td>10,000</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>30th-march-2019</td>
+                        <td>Kamwookya</td>
+                        <td></td>
+                        <td>10,000</td>
+                        <td>10,000</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
                         <td>30th-march-2019</td>
                         <td>Kamwookya</td>
                         <td></td>
