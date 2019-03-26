@@ -22,7 +22,7 @@ const AccountsList = {
                         <td>#94846585884766</td>
                         <td>Kimanje Patrick</td>
                         <td>+256 750461002</td>
-                        <td><a><button class="submitButton accountButton"/>View</a></td>
+                        <td><a><button onclick="window.location.href='#/accountdetails'" class="submitButton accountButton"/>View</a></td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -30,7 +30,7 @@ const AccountsList = {
                         <td>#94846585884766</td>
                         <td>Kimanje Patrick</td>
                         <td>+256 750461002</td>
-                        <td><a><button class="submitButton accountButton"/>View</a></td>
+                        <td><a><button onclick="window.location.href='#/accountdetails'" class="submitButton accountButton"/>View</a></td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -38,7 +38,7 @@ const AccountsList = {
                         <td>#94846585884766</td>
                         <td>Kimanje Patrick</td>
                         <td>+256 750461002</td>
-                        <td><a><button class="submitButton accountButton"/>View</a></td>
+                        <td><a><button onclick="window.location.href='#/accountdetails'" class="submitButton accountButton"/>View</a></td>
                     </tr>
                     <tr>
                         <td>4</td>
@@ -46,7 +46,7 @@ const AccountsList = {
                         <td>#94846585884766</td>
                         <td>Kimanje Patrick</td>
                         <td>+256 750461002</td>
-                        <td><a><button class="submitButton accountButton"/>View</a></td>
+                        <td><a><button onclick="window.location.href='#/accountdetails'" class="submitButton accountButton"/>View</a></td>
                     </tr>
                     <tr>
                         <td>5</td>
@@ -54,7 +54,7 @@ const AccountsList = {
                         <td>#94846585884766</td>
                         <td>Kimanje Patrick</td>
                         <td>+256 750461002</td>
-                        <td><a><button class="submitButton accountButton"/>View</a></td>
+                        <td><a><button onclick="window.location.href='#/accountdetails'" class="submitButton accountButton"/>View</a></td>
                     </tr>
                     <tr>
                         <td>6</td>
@@ -62,7 +62,7 @@ const AccountsList = {
                         <td>#94846585884766</td>
                         <td>Kimanje Patrick</td>
                         <td>+256 750461002</td>
-                        <td><a><button class="submitButton accountButton"/>View</a></td>
+                        <td><a><button onclick="window.location.href='#/accountdetails'" class="submitButton accountButton"/>View</a></td>
                     </tr>
                     <tr>
                         <td>7</td>
@@ -70,7 +70,7 @@ const AccountsList = {
                         <td>#94846585884766</td>
                         <td>Kimanje Patrick</td>
                         <td>+256 750461002</td>
-                        <td><a><button class="submitButton accountButton"/>View</a></td>
+                        <td><a><button onclick="window.location.href='#/accountdetails'" class="submitButton accountButton"/>View</a></td>
                     </tr>
                     <tr>
                         <td>8</td>
@@ -78,7 +78,7 @@ const AccountsList = {
                         <td>#94846585884766</td>
                         <td>Kimanje Patrick</td>
                         <td>+256 750461002</td>
-                        <td><a><button class="submitButton accountButton"/>View</a></td>
+                        <td><a><button onclick="window.location.href='#/accountdetails'" class="submitButton accountButton"/>View</a></td>
                     </tr>
                     <tr>
                         <td>9</td>
@@ -86,7 +86,7 @@ const AccountsList = {
                         <td>#94846585884766</td>
                         <td>Kimanje Patrick</td>
                         <td>+256 750461002</td>
-                        <td><a><button class="submitButton accountButton"/>View</a></td>
+                        <td><a><button onclick="window.location.href='#/accountdetails'" class="submitButton accountButton"/>View</a></td>
                     </tr>
                     <tr>
                         <td>10</td>
@@ -94,7 +94,7 @@ const AccountsList = {
                         <td>#94846585884766</td>
                         <td>Kimanje Patrick</td>
                         <td>+256 750461002</td>
-                        <td><a><button class="submitButton accountButton"/>View</a></td>
+                        <td><a><button onclick="window.location.href='#/accountdetails'" class="submitButton accountButton"/>View</a></td>
                     </tr>
                     <tr>
                         <td>11</td>
@@ -102,7 +102,7 @@ const AccountsList = {
                         <td>#94846585884766</td>
                         <td>Kimanje Patrick</td>
                         <td>+256 750461002</td>
-                        <td><a><button class="submitButton accountButton"/>View</a></td>
+                        <td><a><button onclick="window.location.href='#/accountdetails'" class="submitButton accountButton"/>View</a></td>
                     </tr>
                     
                 </tbody>     

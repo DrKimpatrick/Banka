@@ -7,6 +7,10 @@ import ClientDashboard from './layouts/clientDashboard.js';
 import AccountHistory from './components/clientDashboard/accountHistory.js';
 import NewAccount from './components/clientDashboard/newAccount.js';
 import AdminDashboard from './layouts/adminDashboard.js';
+import AccountsList from './components/adminDashboard/accountsList.js';
+import AccountDetails from './components/adminDashboard/accountDetails.js';
+import CreateAdminStaff from './components/adminDashboard/admin&staff.js';
+
 
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
@@ -14,7 +18,9 @@ const routes = {
     ,'/signup'       : 'signup'
     ,'/dashboard'    : 'profile'
     ,'/account'       : 'account'
-    ,'/admin'          : AdminDashboard
+    ,'/accountlist'   : 'accountList'
+    ,'/createstaffadmin': 'staff&admin'
+    ,'/accountdetails' : 'accountDetails'
 };
 
 const router = async () => {
@@ -51,6 +57,17 @@ const router = async () => {
         }else {
             container.innerHTML = await ClientDashboard.render(NewAccount.render())
             await ClientDashboard.after_render()
+        }
+    }else if (page === 'accountList' || page === 'staff&admin' || page === 'accountDetails') {
+        if (page === 'accountList'){
+            container.innerHTML = await AdminDashboard.render(AccountsList.render())
+            await AdminDashboard.after_render()
+        }else if(page === 'staff&admin'){
+            container.innerHTML = await AdminDashboard.render(CreateAdminStaff.render())
+            await AdminDashboard.after_render()
+        }else {
+            container.innerHTML = await AdminDashboard.render(AccountDetails.render())
+            await AdminDashboard.after_render()
         }
     }
     else {

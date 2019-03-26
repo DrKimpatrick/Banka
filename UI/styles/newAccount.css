@@ -21,7 +21,7 @@
   grid-template-rows: auto;
 }
 
-#accountForm input {
+#accountForm input, select {
   border: 1px solid rgb(216, 210, 210);
 }
 
