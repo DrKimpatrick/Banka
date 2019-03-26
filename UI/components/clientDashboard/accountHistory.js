@@ -1,5 +1,5 @@
 
-export let AccountHistory = {
+const AccountHistory = {
     render : () => {
         let view =  /*html*/`
         <div class='accountHistoryWrapper'>
