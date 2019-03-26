@@ -3,11 +3,13 @@ import Login from './components/auth/login.js';
 import SignUp from './components/auth/signup.js';
 import Utils from './utils.js';
 import Error404 from './components/404.js';
+import ClientDashboard from './layouts/clientDashboard.js';
 
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
     '/'             : 'login'
     ,'/signup'       : 'signup'
+    ,'/dashboard'    : ClientDashboard
 };
 
 const router = async () => {

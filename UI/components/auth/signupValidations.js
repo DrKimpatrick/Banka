@@ -45,6 +45,7 @@ const SForm = (evt) => {
 
     if (!validateEmail(signupEmail) && !validatePassword(signupPassword) && !validateConfirmPass(confirmPassword, signupPassword)){
         window.signupForm.reset();
+        window.location.replace('#/');
     }     
 }
 

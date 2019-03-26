@@ -32,6 +32,7 @@ export  const LForm = (evt) => {
     
     if (!validateEmail(email) && !validatePassword(password)){
         window.loginForm.reset();
+        window.location.replace('#/dashboard');
     }     
 }
 

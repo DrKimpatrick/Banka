@@ -1,0 +1,45 @@
+.bankLogoWrapper {
+  display: grid;
+  grid-template-columns: 20% auto;
+  align-items: center;
+  padding-left: 10px;
+  background-color: #181818;
+  color: #f9d342;
+}
+
+.profileImageWrapper {
+  display: grid;
+  grid-gap: 10px;
+  color: #181818;
+  grid-template-rows: 60% 5% 35%;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  background-color: #dae1e7;
+  font-weight: 600;
+}
+
+.profileImageWrapper img {
+  height: 100px;
+  align-self: end;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profileImageWrapper span {
+  margin: 0 auto;
+}
+.profileImageWrapper i {
+  margin: 0 auto;
+}
+
+.navigation .navWrapper {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 20% auto;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.navigation .navWrapper:hover {
+  background-color: #181818;
+}
