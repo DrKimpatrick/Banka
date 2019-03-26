@@ -1,18 +1,17 @@
 import BlackTheme from '../components/clientDashboard/blackTheme.js';
 import NavBar from '../components/clientDashboard/navbar.js';
-import NewAccount from '../components/clientDashboard/newAccount.js';
-import ClientProfile from './clientProfile.js';
+// import NewAccount from '../components/clientDashboard/newAccount.js';
+// import ClientProfile from './clientProfile.js';
 
 let ClientDashboard = {
-    render : async () => {
+    render : async (content) => {
         let view =  /*html*/`
             <div class='dashWrapper'>
                 <div class='dashBackTheme'>${BlackTheme.render()}</div>
                 <div class='dashLightTheme'>
                     ${NavBar.render()}
                     <div class='contentArea'>
-                        ${NewAccount.render()}
-                        ${ClientProfile.render()}
+                        ${content}
                     </div>
                 </div>
             </div>

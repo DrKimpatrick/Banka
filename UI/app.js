@@ -4,12 +4,15 @@ import SignUp from './components/auth/signup.js';
 import Utils from './utils.js';
 import Error404 from './components/404.js';
 import ClientDashboard from './layouts/clientDashboard.js';
+import ClientProfile from './layouts/clientProfile.js';
+import NewAccount from './components/clientDashboard/newAccount.js';
 
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
     '/'             : 'login'
     ,'/signup'       : 'signup'
-    ,'/dashboard'    : ClientDashboard
+    ,'/dashboard'    : 'profile'
+    ,'/account'       : 'account'
 };
 
 const router = async () => {
@@ -38,7 +41,17 @@ const router = async () => {
             document.getElementById('lightTheme').classList.remove('lightThemeLogin');
             document.getElementById('lightTheme').classList.add('lightThemeSignup');
         }
-    }else {
+
+    }else if (page === 'profile' || page === 'account') {
+        if (page === 'profile'){
+            container.innerHTML = await ClientDashboard.render(ClientProfile.render())
+            await ClientDashboard.after_render()
+        }else {
+            container.innerHTML = await ClientDashboard.render(NewAccount.render())
+            await ClientDashboard.after_render()
+        }
+    }
+    else {
         container.innerHTML = await page.render();
         await page.after_render();
     }
