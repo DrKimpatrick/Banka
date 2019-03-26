@@ -11,5 +11,4 @@ export let ClientProfile = {
     after_render: async () => {}
   }
   
-  export default ClientProfile;
-  
+export default ClientProfile;

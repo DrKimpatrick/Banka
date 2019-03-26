@@ -1,7 +1,7 @@
 .navBar {
   display: grid;
   grid-template-columns: 80% auto;
-  background-color: white;
+  background-color: #f2f6fa;
   width: 100%;
   margin: 0;
   padding: 0;

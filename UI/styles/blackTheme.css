@@ -43,3 +43,8 @@
 .navigation .navWrapper:hover {
   background-color: #181818;
 }
+
+.navigation .navWrapper:focus {
+  background-color: #181818;
+  border-right: 5px solid #f9d342;
+}
