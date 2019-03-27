@@ -1,6 +1,6 @@
 .accountNavWrapper {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   background-color: white;
   width: 100%;
   margin: 5px 0;
@@ -10,26 +10,24 @@
   justify-content: center;
   grid-gap: 20px;
 }
-.accountNavWrapper span {
+.accountNavWrapper button {
   padding: 5px;
   color: #837e7e;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   cursor: pointer;
   transition: 0.8s;
+  cursor: pointer;
 }
-.accountNavWrapper span:hover {
-  /* color: #323232; */
+.accountNavWrapper button:hover {
   color: white;
 }
-.accountNavWrapper span:nth-child(1):hover {
+.accountNavWrapper button:nth-child(1):hover {
   background: rgb(204, 137, 11);
+  border: 2px solid rgb(204, 137, 11);
 }
 
-.accountNavWrapper span:nth-child(2):hover {
-  background: rgb(6, 102, 6);
-}
-
-.accountNavWrapper span:nth-child(3):hover {
+.accountNavWrapper button:nth-child(2):hover {
   background: rgb(151, 8, 8);
+  border: 2px solid rgb(151, 8, 8);
 }

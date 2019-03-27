@@ -11,7 +11,6 @@ import AccountsList from './components/adminDashboard/accountsList.js';
 import AccountDetails from './components/adminDashboard/accountDetails.js';
 import CreateAdminStaff from './components/adminDashboard/admin&staff.js';
 
-
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
     '/'             : 'login'
