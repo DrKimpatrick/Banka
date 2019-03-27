@@ -1,5 +1,5 @@
 export let ModalComponent = {
-    render : (deactivateModal, modalHeader, modalBody) => {
+    render : (deactivateModal, modalHeader, modalBody, color='danger') => {
         let view =  /*html*/`
         <!-- The Modal -->
         <div id=${deactivateModal} class="modal">
@@ -13,7 +13,7 @@ export let ModalComponent = {
                     <p>${modalBody}</p>
                 </div>
                 <div class="modal-footer">
-                    <button class='modalButton confirmButton'>Confirm</button>
+                    <button class='modalButton ${color}'>Confirm</button>
                     <button class='close modalButton closeButton'>Close</button>
                 </div>
             </div>
