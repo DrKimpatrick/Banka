@@ -2,8 +2,8 @@ let Error404 = {
 
     render : async () => {
         let view =  /*html*/`
-            <section class="section">
-                <h1> 404 Error </h1>
+            <section class="wrapper404">
+                <img src='../images/404_2.jpeg'/>
             </section>
         `
         return view
