@@ -2,9 +2,8 @@ const AccountNavBar = {
     render : () => {
         let view =  /*html*/`
         <div class='accountNavWrapper'>
-            <span>Deactivate acount</span>
-            <span>Activate account</span>
-            <span>Delete account</span>
+            <button id="deactivateBtn">Deactivate acount</button>
+            <button id='deleteButton'>Delete account</button>
         </div>
         `
         return view
