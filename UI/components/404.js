@@ -3,7 +3,7 @@ let Error404 = {
     render : async () => {
         let view =  /*html*/`
             <section class="wrapper404">
-                <img src='../images/404_2.jpeg'/>
+                <img src="https://www.dropbox.com/s/enjdoavngpv0sn0/404_2.jpeg?raw=1"/>
             </section>
         `
         return view
