@@ -32,8 +32,21 @@ export  const LForm = (evt) => {
     
     if (!validateEmail(email) && !validatePassword(password)){
         window.loginForm.reset();
-        window.location.replace('#/dashboard');
-    }     
+
+        if(email === 'admin@crest.com'){
+            // dummy admin credentials
+            window.location.replace('#/accountList');
+            localStorage.setItem('email', email);
+        }else if(email === 'staff@crest.com'){
+            // dummy staff credentials
+            window.location.replace('#/accountList');
+            localStorage.setItem('email', email);
+        }else{
+            window.location.replace('#/dashboard');
+            localStorage.setItem('email', email);
+        }
+
+    }   
 }
 
 window.addEventListener('load', () => {

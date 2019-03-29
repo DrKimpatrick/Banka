@@ -1,9 +1,11 @@
+/* Wrappers the elements of the auth component */
 .topWrapper {
   height: 100vh;
   overflow: auto;
   position: relative;
 }
 
+/* Triangle element */
 .triangle-left {
   width: 0;
   height: 0;
@@ -16,7 +18,7 @@
   z-index: -1;
   opacity: 0.7;
 }
-
+/* Circle element */
 .circle {
   height: 300px;
   width: 300px;
@@ -27,7 +29,7 @@
   left: -110px;
   z-index: -1;
 }
-
+/* Contains the dark theme and the form area */
 .container {
   background: white;
   height: 80%;
@@ -40,41 +42,87 @@
   grid-template-columns: 40% auto;
   z-index: 100;
 }
+@media (max-width: 768px) {
+  .container {
+    height: 90%;
+    width: 90%;
+    margin: 5% auto;
+    grid-template-columns: 20% auto;
+  }
+}
 
+@media (max-width: 400px) {
+  .container {
+    height: 80%;
+    width: 95%;
+    margin: 5% auto;
+    grid-template-columns: 35% auto;
+  }
+}
+
+/* Contains the bank logo and name */
 .blackTheme {
   background: #292826;
   height: 100%;
   display: grid;
   grid-template-rows: 40% auto 50%;
   grid-gap: 30px;
+  width: 100%;
 }
+/* The bank icon */
 .bankIcon {
   align-self: end;
   margin: 0 auto;
   color: #f9d342;
+  text-align: center;
 }
+/* Bank title */
 .blackTheme h2 {
   color: #dae1e7;
   margin: 0 auto;
   font-weight: bolder;
   font-size: 35px;
+  text-align: center;
 }
+/* Bank mission */
 .blackTheme p {
   color: #f9d342;
   margin: 0 auto;
   font-weight: bolder;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .blackTheme {
+    grid-template-rows: 30% auto 60%;
+    grid-gap: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .blackTheme {
+    grid-template-rows: 30% auto 60%;
+    grid-gap: 18px;
+  }
+  .bankIcon {
+    font-size: 16px;
+  }
+  .blackTheme h2 {
+    font-size: 25px;
+  }
 }
 
+/* hides the area that houses the validation error */
 .hideError {
   display: none;
 }
 
+/* color for the validation errors */
 .displayError {
   display: block;
   color: red;
   font-weight: 700;
 }
 
+/* This is used as the default style for any submit button */
 .submitButton {
   background-color: #292826;
   color: white;

@@ -1,12 +1,14 @@
+import isAdminStaffOrClient from '../Utils.js';
+import ClientSearchForm from '../adminDashboard/accountSearchForm.js';
 
 export let NavBar = {
     render : () => {
         let view =  /*html*/`
         <div class='navBar'>
-            <div></div>
+            <div>${isAdminStaffOrClient().status !== 'Client'? ClientSearchForm.render() : ''}</div>
             <div class='navProfileWrapper'>
                 <img src='../../images/patrick.jpg'/>
-                <span>dr.kimpatrick</span>
+                <span>${isAdminStaffOrClient().email}</span>
             </div>
         </div>
         `

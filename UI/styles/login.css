@@ -17,7 +17,11 @@
   width: 100%;
   margin: 0;
 }
-
+@media (max-width: 768px) {
+  .lightThemeLogin form {
+    grid-row-gap: 5px;
+  }
+}
 .lightThemeLogin p {
   color: #292826;
   text-align: center;
@@ -47,4 +51,22 @@ select {
   height: 35px;
   padding-left: 5px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .lightThemeLogin h3 {
+    font-size: 20px;
+  }
+  .lightThemeLogin input[type="text"],
+  input[type="text"] {
+    font-size: 15px;
+    height: 25px;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .lightThemeLogin h3 {
+    text-align: center;
+  }
 }
