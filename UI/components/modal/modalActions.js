@@ -9,18 +9,24 @@ const appModal = () => {
   let deleteBtn = document.getElementById("deleteButton");
   let creditDebitBtn = document.getElementById("creditDebitBtn");
 
-  deactivateButton.addEventListener('click', () => {
-    deactivateModal.style.display = "block";
-  })
-  
-  deleteBtn.addEventListener('click', () => {
-    deleteModal.style.display = "block";
-  }) 
-
-  creditDebitBtn.addEventListener('click', () => {
-    creditDebitModal.style.display = "block";
-  }) 
+  if(deactivateButton){
+    deactivateButton.addEventListener('click', () => {
+      deactivateModal.style.display = "block";
+    })
+  }
  
+  if(deleteBtn){
+    deleteBtn.addEventListener('click', () => {
+      deleteModal.style.display = "block";
+    })
+  }
+   
+  if(creditDebitBtn){
+    creditDebitBtn.addEventListener('click', () => {
+      creditDebitModal.style.display = "block";
+    })
+  }
+  
   // When the user clicks on the button, open the modal 
   // all buttons that have class close
   let closeButtons = document.querySelectorAll('.close');
@@ -38,11 +44,11 @@ const appModal = () => {
 
   // When the user clicks anywhere outside of the modal, close it
   window.addEventListener('click', (event) => {
-    if (event.target == deactivateModal) {
+    if (event.target === deactivateModal) {
       deactivateModal.style.display = "none";
-    }else if (event.target == deleteModal){
+    }else if (event.target === deleteModal){
       deleteModal.style.display = "none";
-    }else if (event.target == deleteModal){
+    }else if (event.target === creditDebitModal){
       creditDebitModal.style.display = "none";
     }
   }) 

@@ -27,6 +27,10 @@
 
 .profileImageWrapper span {
   margin: 0 auto;
+  color: #f9d342;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px black;
 }
 .profileImageWrapper i {
   margin: 0 auto;
@@ -48,4 +52,16 @@
   background-color: #181818;
   border-right: 5px solid #f9d342;
   border-bottom: 1px solid #81817f;
+}
+
+@media (max-width: 1024px) {
+  .navigation i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation i {
+    font-size: 18px;
+  }
 }

@@ -1,9 +1,31 @@
+import isAdminStaffOrClient from '../Utils.js';
+
+const TransactButton = {
+    render: () => {
+        let view = /*html*/`
+            <button id="creditDebitBtn">Credit / Debit</button>
+        `
+        return view
+    },
+    after_render: async () => {}
+}
+
+const AccountStatus = {
+    render: () => {
+        let view = /*html*/`
+            <button id="deactivateBtn">Deactivate acount</button>
+        `
+        return view
+    },
+    after_render: async () => {}
+}
+
 const AccountNavBar = {
     render : () => {
         let view =  /*html*/`
         <div class='accountNavWrapper'>
-            <button id="creditDebitBtn">Credit / Debit</button>
-            <button id="deactivateBtn">Deactivate acount</button>
+            ${isAdminStaffOrClient().status === 'Staff' ? (TransactButton.render()): ''}
+            ${isAdminStaffOrClient().status === 'Admin' ? (AccountStatus.render()): ''}
             <button id='deleteButton'>Delete account</button>
         </div>
         `
