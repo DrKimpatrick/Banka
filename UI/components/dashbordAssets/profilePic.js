@@ -4,7 +4,7 @@ const ProfilePicture = {
     render : () => {
         let view =  /*html*/`
             <div class='profileImageWrapper'>
-                <img src='../../images/patrick.jpg'/>
+                <img src="https://www.dropbox.com/s/vbc0rkbz8qq5wyv/patrick.jpg?raw=1" />
                 <i class="fas fa-envelope-open-text"> ${isAdminStaffOrClient().email}</i>
                 <span>${isAdminStaffOrClient().status}</span>
             </div>

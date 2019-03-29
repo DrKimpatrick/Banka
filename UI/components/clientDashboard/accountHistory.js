@@ -4,7 +4,7 @@ const AccountHistory = {
         let view =  /*html*/`
         <div class='accountHistoryWrapper'>
             <div class='accountProfile'>
-                <img src='../../images/patrick.jpg'/>
+                <img src="https://www.dropbox.com/s/vbc0rkbz8qq5wyv/patrick.jpg?raw=1"/>
                 <div class='profileNames'>
                     <span><b>Email:</b>dr.kimpatrick@gmail.com</span>
                     <span><b>Account NO:</b> #37746646646</span>
