@@ -1,6 +1,6 @@
-export let CreditDebitAccount = {
+export const CreditDebitAccount = {
     render : (deactivateModal, modalHeader, modalBody) => {
-        let view =  /*html*/`
+        const view =  /*html*/`
         <div class='transactWrapper'>
             <form id='accountForm'>
                 <div class='formGroup'>

@@ -4,7 +4,7 @@ import isAdminStaffOrClient from '../Utils.js';
 
 const CreateAccount = {
     render : () => {
-        let view = /*html*/`
+        const view = /*html*/`
             <a href='#/createstaffadmin' class='navWrapper' id='profile'>
                 <i class="fas fa-plus fa-2x"></i>
                 <span>Account</span>
@@ -17,7 +17,7 @@ const CreateAccount = {
 
 const AdminBlackTheme = {
     render : () => {
-        let view =  /*html*/`
+        const view =  /*html*/`
             ${BankLogo.render()}
 
             ${ProfilePicture.render()}

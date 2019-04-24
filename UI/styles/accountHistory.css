@@ -33,3 +33,9 @@
   font-weight: 500;
   font-size: 30px;
 }
+
+@media (max-width: 1024px) {
+  .hideTableElement {
+    display: none;
+  }
+}

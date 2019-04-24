@@ -3,9 +3,9 @@ import NavBar from '../components/clientDashboard/navbar.js';
 import ModalComponent from '../components/modal/modalComponent.js';
 import CreditDebitAccount from '../components/adminDashboard/creditDebit.js';
 
-let AdminDashboard = {
+const AdminDashboard = {
     render : async (data) => {
-        let view =  /*html*/`
+        const view =  /*html*/`
             <div class='dashWrapper'>
                 <div class='dashBackTheme'>${AdminBlackTheme.render()}</div>
                 <div class='dashLightTheme'>

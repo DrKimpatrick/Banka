@@ -1,6 +1,6 @@
-let Auth = {
+const Auth = {
     render : async (form) => {
-        let view =  /*html*/`
+        const view =  /*html*/`
             <div class="topWrapper">
                 <div class="triangle-left"></div>
                 <div class="circle"></div>

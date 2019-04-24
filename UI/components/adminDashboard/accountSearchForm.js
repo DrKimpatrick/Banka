@@ -1,4 +1,4 @@
-export let ClientSearchForm = {
+export const ClientSearchForm = {
     render : () => {
         let view =  /*html*/`
         <form class="accountSearchForm">

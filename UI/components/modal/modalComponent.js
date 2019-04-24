@@ -1,6 +1,6 @@
-export let ModalComponent = {
+export const ModalComponent = {
     render : (deactivateModal, modalHeader, modalBody, color='danger') => {
-        let view =  /*html*/`
+        const view =  /*html*/`
         <!-- The Modal -->
         <div id=${deactivateModal} class="modal">
             <!-- Modal content -->

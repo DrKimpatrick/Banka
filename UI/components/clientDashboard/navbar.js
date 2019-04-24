@@ -1,9 +1,9 @@
 import isAdminStaffOrClient from '../Utils.js';
 import ClientSearchForm from '../adminDashboard/accountSearchForm.js';
 
-export let NavBar = {
+export const NavBar = {
     render : () => {
-        let view =  /*html*/`
+        const view =  /*html*/`
         <div class='navBar'>
             <div>${isAdminStaffOrClient().status !== 'Client'? ClientSearchForm.render() : ''}</div>
             <div class='navProfileWrapper'>
