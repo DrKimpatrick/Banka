@@ -1,7 +1,7 @@
 
 const AccountHistory = {
     render : () => {
-        let view =  /*html*/`
+        const view =  /*html*/`
         <div class='accountHistoryWrapper'>
             <div class='accountProfile'>
                 <img src="https://www.dropbox.com/s/vbc0rkbz8qq5wyv/patrick.jpg?raw=1"/>
@@ -13,105 +13,78 @@ const AccountHistory = {
             <span class='accountHeader'>Account history</span>
             <table id="customerTable">
                 <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Date</th>
-                        <th>Branch</th>
-                        <th>Credit</th>
-                        <th>Debit</th>
-                        <th>Balance</th>
+                    <tr id='theadCustomer'>
+                        <th class='hideTableElement'>Transaction#</th>
+                        <th class='hideTableElement'>Transaction type</th>
+                        <th>Account Number</th>
+                        <th>Amount</th>
+                        <th>Closing Balance</th>
+                        <th class='hideTableElement'>Teller name</th>
+                        <th class='hideTableElement'>Date</th>
+                        <th class='hideTableElement'>Time stamp</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>26th-march-2019</td>
-                        <td>Namungoona</td>
-                        <td>20,000</td>
-                        <td></td>
-                        <td>20,000</td>
+                        <td class='hideTableElement'>13245333</td>
+                        <td class='hideTableElement'>Deposit</td>
+                        <td>2345674333</td>
+                        <td>120000</td>
+                        <td>1300000</td>
+                        <td class='hideTableElement'>Alex</td>
+                        <td class='hideTableElement'>29-03-2019</td>
+                        <td class='hideTableElement'>1:33 PM</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>30th-march-2019</td>
-                        <td>Kamwookya</td>
-                        <td></td>
-                        <td>10,000</td>
-                        <td>10,000</td>
+                        <td class='hideTableElement'>13245333</td>
+                        <td class='hideTableElement'>Credit</td>
+                        <td>2345674333</td>
+                        <td>180000</td>
+                        <td>1300000</td>
+                        <td class='hideTableElement'>Kenedy</td>
+                        <td class='hideTableElement'>29-03-2019</td>
+                        <td class='hideTableElement'>1:33 PM</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>30th-march-2019</td>
-                        <td>Kamwookya</td>
-                        <td></td>
-                        <td>10,000</td>
-                        <td>10,000</td>
+                        <td class='hideTableElement'>13245333</td>
+                        <td class='hideTableElement'>Deposit</td>
+                        <td>2345674333</td>
+                        <td>120000</td>
+                        <td>1300000</td>
+                        <td class='hideTableElement'>Patrick</td>
+                        <td class='hideTableElement'>29-03-2019</td>
+                        <td class='hideTableElement'>1:33 PM</td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>30th-march-2019</td>
-                        <td>Kamwookya</td>
-                        <td></td>
-                        <td>10,000</td>
-                        <td>10,000</td>
+                        <td class='hideTableElement'>13245333</td>
+                        <td class='hideTableElement'>Credit</td>
+                        <td>2345674333</td>
+                        <td>320000</td>
+                        <td>1800000</td>
+                        <td class='hideTableElement'>Andrew</td>
+                        <td class='hideTableElement'>29-03-2019</td>
+                        <td class='hideTableElement'>1:33 PM</td>00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td>30th-march-2019</td>
-                        <td>Kamwookya</td>
-                        <td></td>
-                        <td>10,000</td>
-                        <td>10,000</td>
+                        <td class='hideTableElement'>13245333</td>
+                        <td class='hideTableElement'>Deposit</td>
+                        <td>2345674333</td>
+                        <td>120000</td>
+                        <td>1300000</td>
+                        <td class='hideTableElement'>Frank</td>
+                        <td class='hideTableElement'>29-03-2019</td>
+                        <td class='hideTableElement'>1:33 PM</td>10,000</td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td>30th-march-2019</td>
-                        <td>Kamwookya</td>
-                        <td></td>
-                        <td>10,000</td>
-                        <td>10,000</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>30th-march-2019</td>
-                        <td>Kamwookya</td>
-                        <td></td>
-                        <td>10,000</td>
-                        <td>10,000</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>30th-march-2019</td>
-                        <td>Kamwookya</td>
-                        <td></td>
-                        <td>10,000</td>
-                        <td>10,000</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>30th-march-2019</td>
-                        <td>Kamwookya</td>
-                        <td></td>
-                        <td>10,000</td>
-                        <td>10,000</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>30th-march-2019</td>
-                        <td>Kamwookya</td>
-                        <td></td>
-                        <td>10,000</td>
-                        <td>10,000</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>30th-march-2019</td>
-                        <td>Kamwookya</td>
-                        <td></td>
-                        <td>10,000</td>
-                        <td>10,000</td>
-                    </tr>
-                    
+                        <td class='hideTableElement'>13245333</td>
+                        <td class='hideTableElement'>Credit</td>
+                        <td>2345674333</td>
+                        <td>20000</td>
+                        <td>1700000</td>
+                        <td class='hideTableElement'>Patrick</td>
+                        <td class='hideTableElement'>29-03-2019</td>
+                        <td class='hideTableElement'>1:33 PM</td>00</td>
+                    </tr>s  
                 </tbody>     
         </table>
         </div>

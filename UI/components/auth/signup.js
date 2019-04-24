@@ -1,6 +1,6 @@
-export let SignUp = {
+export const SignUp = {
   render : () => {
-      let view =  /*html*/`
+      const view =  /*html*/`
           <h3>Signup to Crest</h3>
           <form id='signupForm'>
             <div class='formGroup'>

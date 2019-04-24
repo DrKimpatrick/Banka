@@ -1,7 +1,7 @@
 
 const CreateAdminStaff = {
     render : () => {
-        let view =  /*html*/`
+        const view =  /*html*/`
             <div class='accountFormWrapper'>
                 <span>Create staff/admin account</span>
                 <form id='accountForm'>

@@ -1,8 +1,8 @@
 import BankLogo from '../dashbordAssets/bankLogo.js';
 import ProfilePicture from '../dashbordAssets/profilePic.js';
-export let BlackTheme = {
+export const BlackTheme = {
     render : () => {
-        let view =  /*html*/`
+        const view =  /*html*/`
             ${BankLogo.render()}
 
             ${ProfilePicture.render()}

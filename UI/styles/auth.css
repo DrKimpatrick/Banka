@@ -39,24 +39,23 @@
   z-index: 10;
   opacity: 0.8;
   display: grid;
-  grid-template-columns: 40% auto;
+  grid-template-columns: 30% auto;
   z-index: 100;
 }
-@media (max-width: 768px) {
-  .container {
-    height: 90%;
-    width: 90%;
-    margin: 5% auto;
-    grid-template-columns: 20% auto;
-  }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 1024px) {
   .container {
     height: 80%;
-    width: 95%;
-    margin: 5% auto;
-    grid-template-columns: 35% auto;
+    width: 90%;
+    margin: 10% auto;
+    grid-template-rows: 35% auto;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+  }
+  .triangle-left {
+    display: none;
+  }
+  .circle {
+    display: none;
   }
 }
 
@@ -91,25 +90,38 @@
   font-weight: bolder;
   text-align: center;
 }
+
 @media (max-width: 768px) {
   .blackTheme {
-    grid-template-rows: 30% auto 60%;
+    grid-template-rows: 40% auto 50%;
     grid-gap: 18px;
   }
+  .bankIcon {
+    font-size: 20px;
+  }
+  .blackTheme h2 {
+    font-size: 30 px;
+  }
+  .blackTheme p {
+    font-size: 20px;
+  }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 400px) {
   .blackTheme {
-    grid-template-rows: 30% auto 60%;
+    grid-template-rows: 40% auto 50%;
     grid-gap: 18px;
   }
   .bankIcon {
     font-size: 16px;
   }
   .blackTheme h2 {
-    font-size: 25px;
+    font-size: 25 px;
+  }
+  .blackTheme p {
+    font-size: 17px;
   }
 }
-
 /* hides the area that houses the validation error */
 .hideError {
   display: none;
@@ -130,4 +142,14 @@
   cursor: pointer;
   height: 35px;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .submitButton {
+    height: 60px;
+    font-size: 30px;
+  }
+  .formGroup span {
+    font-size: 30px;
+  }
 }

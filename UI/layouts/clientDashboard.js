@@ -1,9 +1,9 @@
 import BlackTheme from '../components/clientDashboard/blackTheme.js';
 import NavBar from '../components/clientDashboard/navbar.js';
 
-let ClientDashboard = {
+const ClientDashboard = {
     render : async (content) => {
-        let view =  /*html*/`
+        const view =  /*html*/`
             <div class='dashWrapper'>
                 <div class='dashBackTheme'>${BlackTheme.render()}</div>
                 <div class='dashLightTheme'>

@@ -2,36 +2,38 @@
 .dashWrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: 20% auto;
+  grid-template-columns: 20% 80%;
   height: 100vh;
   background-color: #323232;
 }
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .dashWrapper {
     grid-template-columns: 25% auto;
   }
-}
+} */
 @media (max-width: 640px) {
   .dashWrapper {
-    grid-template-columns: 50% auto;
+    grid-template-columns: 40% 60%;
   }
 }
-@media (max-width: 200px) {
+/* @media (max-width: 200px) {
   .dashWrapper {
     grid-template-columns: 60% auto;
   }
-}
+} */
 /* Wrapper for the dark area */
 .dashBackTheme {
   display: grid;
   grid-template-rows: 10% 30% auto;
   height: 100%;
   width: 100%;
+  display: fixed;
 }
 
 /* Wrapper for the light area */
 .dashLightTheme {
   background-color: #f6f6f6;
-  width: 100%;
+  max-width: 100%;
   overflow-y: auto;
+  overflow-x: auto;
 }

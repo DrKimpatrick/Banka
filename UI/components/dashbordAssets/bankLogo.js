@@ -1,7 +1,7 @@
 
 const BankLogo = {
     render : () => {
-        let view =  /*html*/`
+        const view =  /*html*/`
         <div class='bankLogoWrapper'>
             <i class="fas fa-university fa-2x"></i>
             <h2>Crest Bank</h2>

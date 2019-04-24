@@ -1,7 +1,7 @@
 
-export let Login = {
+export const Login = {
   render : () => {
-      let view =  /*html*/`
+      const view =  /*html*/`
           <h3>Login to Crest</h3>
           <form id='loginForm'>
             <div class='formGroup'>
