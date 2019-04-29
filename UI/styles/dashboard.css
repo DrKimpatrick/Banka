@@ -2,25 +2,11 @@
 .dashWrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20% auto;
   height: 100vh;
   background-color: #323232;
 }
-/* @media (max-width: 1024px) {
-  .dashWrapper {
-    grid-template-columns: 25% auto;
-  }
-} */
-@media (max-width: 640px) {
-  .dashWrapper {
-    grid-template-columns: 40% 60%;
-  }
-}
-/* @media (max-width: 200px) {
-  .dashWrapper {
-    grid-template-columns: 60% auto;
-  }
-} */
+
 /* Wrapper for the dark area */
 .dashBackTheme {
   display: grid;
@@ -28,6 +14,15 @@
   height: 100%;
   width: 100%;
   display: fixed;
+}
+
+@media (max-width: 1024px) {
+  .dashWrapper {
+    grid-template-columns: 50px auto;
+  }
+  .dashBackTheme span {
+    display: none;
+  }
 }
 
 /* Wrapper for the light area */

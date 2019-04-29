@@ -38,4 +38,13 @@
   .hideTableElement {
     display: none;
   }
+  .accountProfile {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+  .accountProfile img {
+    align-items: center;
+    padding-left: 40%;
+  }
 }

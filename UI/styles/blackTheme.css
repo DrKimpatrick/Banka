@@ -55,13 +55,19 @@
 }
 
 @media (max-width: 1024px) {
+  .bankLogoWrapper h2 {
+    display: none;
+  }
+  .profileImageWrapper img {
+    display: none;
+  }
+  .profileImageWrapper span {
+    display: none;
+  }
+  .profileImageWrapper i {
+    display: none;
+  }
   .navigation i {
     font-size: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .navigation i {
-    font-size: 18px;
   }
 }

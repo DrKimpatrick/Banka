@@ -3,7 +3,7 @@ const CreateAdminStaff = {
     render : () => {
         const view =  /*html*/`
             <div class='accountFormWrapper'>
-                <span>Create staff/admin account</span>
+                <span>Change user type staff/admin/client</span>
                 <form id='accountForm'>
                     <div class='formGroup'>
                         <label for='email'>Email</label>
@@ -16,19 +16,10 @@ const CreateAdminStaff = {
                             <option>--select--</option>
                             <option>Admin</option>
                             <option>Staff</option>
+                            <option>Client</option>
                         </select>
                     </div>
-                    <div class='formGroup'>
-                        <label for='password'>Password</label>
-                        <input type="password" id='password' name="password" />
-                        <span id='loginEmailError' class='hideError'></span>
-                    </div>
-                    <div class='formGroup'>
-                        <label for='confirmPassword'>Confirm password</label>
-                        <input type="password" id='confirmPassword' name="password" />
-                        <span id='loginEmailError' class='hideError'></span>
-                    </div>
-                    <a><input type="submit" class="submitButton" value='Create Account'/></a>
+                    <a><input type="submit" class="submitButton" value='Change user type'/></a>
                 </form>
             </div>
         `
