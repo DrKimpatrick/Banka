@@ -19,9 +19,9 @@ const AccountHistory = {
                         <th>Account Number</th>
                         <th>Amount</th>
                         <th>Closing Balance</th>
-                        <th class='hideTableElement'>Teller name</th>
+                        <th class='hideTableElement'>Cachier</th>
                         <th class='hideTableElement'>Date</th>
-                        <th class='hideTableElement'>Time stamp</th>
+                        <th class='hideTableElement'>Time</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -63,7 +63,7 @@ const AccountHistory = {
                         <td>1800000</td>
                         <td class='hideTableElement'>Andrew</td>
                         <td class='hideTableElement'>29-03-2019</td>
-                        <td class='hideTableElement'>1:33 PM</td>00</td>
+                        <td class='hideTableElement'>1:33 PM</td>
                     </tr>
                     <tr>
                         <td class='hideTableElement'>13245333</td>
@@ -73,7 +73,7 @@ const AccountHistory = {
                         <td>1300000</td>
                         <td class='hideTableElement'>Frank</td>
                         <td class='hideTableElement'>29-03-2019</td>
-                        <td class='hideTableElement'>1:33 PM</td>10,000</td>
+                        <td class='hideTableElement'>1:33 PM</td>
                     </tr>
                     <tr>
                         <td class='hideTableElement'>13245333</td>
@@ -83,8 +83,8 @@ const AccountHistory = {
                         <td>1700000</td>
                         <td class='hideTableElement'>Patrick</td>
                         <td class='hideTableElement'>29-03-2019</td>
-                        <td class='hideTableElement'>1:33 PM</td>00</td>
-                    </tr>s  
+                        <td class='hideTableElement'>1:33 PM</td>
+                    </tr> 
                 </tbody>     
         </table>
         </div>

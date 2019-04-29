@@ -5,7 +5,7 @@
   display: grid;
   grid-template-rows: 10% auto;
   grid-gap: 20px;
-  height: 400px;
+  height: 250px;
   /* background-color: white; */
 }
 .accountFormWrapper span {

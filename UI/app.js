@@ -10,6 +10,7 @@ import AdminDashboard from './layouts/adminDashboard.js';
 import AccountsList from './components/adminDashboard/accountsList.js';
 import AccountDetails from './components/adminDashboard/accountDetails.js';
 import CreateAdminStaff from './components/adminDashboard/admin&staff.js';
+import UserAccountsList from './components/clientDashboard/userAccountsList.js';
 
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
@@ -20,6 +21,7 @@ const routes = {
     ,'/accountlist'   : 'accountList'
     ,'/createstaffadmin': 'staff&admin'
     ,'/accountdetails' : 'accountDetails'
+    ,'/useraccountdetails': 'useraccountdetails'
 };
 
 const router = async () => {
@@ -49,12 +51,15 @@ const router = async () => {
             document.getElementById('lightTheme').classList.add('lightThemeSignup');
         }
 
-    }else if (page === 'profile' || page === 'account') {
+    }else if (page === 'profile' || page === 'account' || page === 'useraccountdetails') {
         if (page === 'profile'){
-            container.innerHTML = await ClientDashboard.render(AccountHistory.render())
+            container.innerHTML = await ClientDashboard.render(UserAccountsList.render())
             await ClientDashboard.after_render()
-        }else {
+        }else if(page === 'account') {
             container.innerHTML = await ClientDashboard.render(NewAccount.render())
+            await ClientDashboard.after_render()
+        }else{
+            container.innerHTML = await ClientDashboard.render(AccountHistory.render())
             await ClientDashboard.after_render()
         }
     }else if (page === 'accountList' || page === 'staff&admin' || page === 'accountDetails') {
